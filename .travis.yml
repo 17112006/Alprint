@@ -6,10 +6,8 @@ script:
 # prepare qemu
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
 # build image
-- docker build -t mastaak/docker-octoprint-alpine .
-# test image
-# - docker run mastaak/docker-octoprint-alpine
+- docker build -t mastaak/alprint .
 # push image
 - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-- docker tag mastaak/docker-octoprint-alpine:latest mastaak/docker-octoprint-alpine
-- docker push mastaak/docker-octoprint-alpine
+- docker tag mastaak/mastaak/alprint:latest mastaak/mastaak/alprint
+- docker push mastaak/mastaak/alprint

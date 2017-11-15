@@ -12,7 +12,7 @@ Simply start the container with :
 docker run -p 5000:5000 \
   -v /host/path/to/config:/home/user/.octoprint \
   --device=/dev/ttyS0:/dev/ttyS0 \
-  -it mastaak/alpine-octoprint
+  -it mastaak/alprint
 
 The config directory /host/path/to/config is where your octoprint persistent data is stored on the host OS.
 

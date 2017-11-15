@@ -1,3 +1,5 @@
+
+[![Build Status](https://travis-ci.org/MastaaK/Alprint.svg?branch=master)](https://travis-ci.org/MastaaK/Alprint)
 # [Al]pine + Octop[rint]
 The goal of this build is to embed Octoprint into an Alpine OS.
 

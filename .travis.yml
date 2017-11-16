@@ -9,5 +9,5 @@ script:
 - docker build -t mastaak/alprint .
 # push image
 - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-- docker tag mastaak/mastaak/alprint:latest mastaak/mastaak/alprint
-- docker push mastaak/mastaak/alprint
+- docker tag mastaak/alprint:latest mastaak/alprint
+- docker push mastaak/alprint

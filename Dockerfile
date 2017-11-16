@@ -8,7 +8,7 @@ addgroup user dialout && \
 apk update && \
   apk add --no-cache python yaml-dev py-setuptools && \
   apk add --no-cache --virtual .build &&\
-  apk add git linux-headers gcc libc-dev python-dev py-pip && \
+  apk add git linux-headers gcc libc-dev python-dev py-setuptools python2 py-pip && \
 git clone https://github.com/foosel/OctoPrint.git /home/user/octoprint && \
 cd /home/user/octoprint && \
 pip install --upgrade pip && \

@@ -21,5 +21,5 @@ rm -rf /home/user/octoprint /root/.cache /var/cache/apk/* $0
 
 USER user
 EXPOSE 5000
-ENTRYPOINT ["/usr/bin/octoprint"] 
+ENTRYPOINT ["octoprint serve"] 
 # CMD /usr/bin/octoprint

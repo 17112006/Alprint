@@ -9,10 +9,12 @@ This is not a copy of OctoPi, as it will not embed Cura engine (as I din't use i
 
 Simply start the container with :
 
-docker run -p 5000:5000 \
-  -v /host/path/to/config:/home/user/.octoprint \
-  --device=/dev/ttyS0:/dev/ttyS0 \
-  -it mastaak/alprint
+docker run -d -p 5000:5000 \
+  -v /root/octoprint/config:/home/user/.octoprint  \
+  --device=/dev/ttyUSB0 \
+  --entrypoint=/usr/bin/octoprint \
+  --name=OctoPrint \
+  mastaak/alprint
 
 The config directory /host/path/to/config is where your octoprint persistent data is stored on the host OS.
 

@@ -1,6 +1,6 @@
-FROM resin/armhf-alpine
-MAINTAINER MastaaK
+FROM schmich/armv7hf-alpine-qemu:3.5
 
+RUN ["cross-build-start"]
 RUN addgroup -S user -g 3000 && \
 adduser -S user user -u 3000 && \
 addgroup user tty  && \
@@ -18,6 +18,7 @@ mkdir /home/user/.octoprint && \
 chown -R user:user /home/user/.octoprint &&\
 apk del .build && \
 rm -rf /home/user/octoprint /root/.cache /var/cache/apk/* $0
+RUN ["cross-build-end"]
 
 USER user
 EXPOSE 5000

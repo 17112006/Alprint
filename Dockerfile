@@ -18,7 +18,7 @@ python setup.py install && \
 mkdir /home/user/.octoprint && \
 chown -R user:user /home/user/.octoprint &&\
 apk del .build && \
-rm -rf /home/user/octoprint /root/.cache /var/cache/apk/* $0
+rm -rf /home/user/octoprint /root/.cache /var/cache/apk/*
 RUN ["cross-build-end"]
 
 USER user

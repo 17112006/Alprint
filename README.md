@@ -9,14 +9,7 @@ This is not a copy of OctoPi, as it will not embed Cura engine (as I din't use i
 
 Simply start the container with :
 
-docker run -d -p 5000:5000 \
-  -v /root/octoprint/config:/home/user/.octoprint  \
-  --device=/dev/ttyUSB0 \
-  --entrypoint=/usr/bin/octoprint \
-  --name=OctoPrint \
-  mastaak/alprint
-
-The config directory /host/path/to/config is where your octoprint persistent data is stored on the host OS.
+$ docker volume create alprint_data && docker run -d -p 5000:5000 -v alprint_data:/home/user/.octoprint --device=/dev/ttyUSB0 --entrypoint=/usr/bin/octoprint --name=AlPrint mastaak/alprint:master
 
 The device /dev/ttyS0 will probably need to be altered to represent where your 3D printer lives.
 

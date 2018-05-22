@@ -1,0 +1,13 @@
+{
+  "name": "AlPrint",
+  "version": "0.1",
+  "slug": "hello_world",
+  "description": "Alpine + OctoPrint for HassIO",
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "5000/tcp": 5000
+  }
+}

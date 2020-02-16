@@ -1,6 +1,4 @@
 
-[![Build Status](https://travis-ci.org/MastaaK/Alprint.svg?branch=master)](https://travis-ci.org/MastaaK/Alprint)
-# [Al]pine + Octop[rint]
 The goal of this build is to embed Octoprint into an Alpine OS.
 
 This is not a copy of OctoPi, as it will not embed Cura engine (as I din't use it)
@@ -22,3 +20,4 @@ The device /dev/ttyS0 will probably need to be altered to represent where your 3
 
 # TO-DO :
 - Embed MJPG Streamer
+Configuring two-factor authentication recovery methods
